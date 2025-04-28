@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Chủ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+.main-wrapper {
+  background-color: #2b2b2b;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.search-box input {
+  width: 400px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+}
+.user-actions a {
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.user-actions a:hover {
+  text-decoration: underline;
+}
+.navbar {
+  background-color: #2a2a2a;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      padding: 10px;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #1f1f1f;
+      min-width: 200px;
+      top: 20px;
+      left: 0;
+      z-index: 10;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 12px 12px;
+      color: #ddd;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    .dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+}
+    .navbar a:hover {
+      background-color: #444;
+      color: orange;
+      border-radius: 4px;
+    }
+.movie-card {
+  width: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  background-color: #1a1a1a;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.movie-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  display: block;
+}
+.movie-info {
+  padding: 10px;
+  background-color: #2a2a2a;
+  color: #fff;
+  text-align: center;
+}
+.movie-info a {
+  text-decoration: none; 
+  color: white; 
+}
+.movie-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+<div class="main-wrapper">
+  <div class="top-header">
+    <div class="search-box">
+      <input type="text" placeholder="V.d: tên phim, tên diễn viên...">
+    </div>
+    <div class="user-actions">
+      <a href="Dangnhap.html">Đăng nhập</a> |
+      <a href="Dangky.html">Đăng ký</a> |
+      <a href="Lienhe.html">Liên hệ</a>
+    </div>
+  </div>
+  <div class="navbar">
+    <a href="#">TRANG CHỦ</a>
+    <div class="dropdown">
+      <a href="#">THỂ LOẠI </a>
+      <div class="dropdown-content">
+        <a href="Theloaihanhdong.html">Hành Động</a>
+        <a href="TheloaiTinhCam.html">Tình Cảm</a>
+        <a href="TheloaiHaihuoc.html">Hài Hước</a>
+      </div>
+    </div>
+    <div class="dropdown">
+    <a href="#">QUỐC GIA</a>
+    <div class="dropdown-content">
+      <a href="QGHanQuoc.html">Hàn Quốc</a>
+      <a href="QGNhatBan.html">Nhật Bản</a>
+      <a href="QGVietNam.html">Việt Nam</a>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="movie-container">
+  <div class="movie-card">
+    <a href="OnePiece.html">
+      <img src="Images/Egghead One Piece.jpg" alt="One Piece Arc Egghead">
+    </a>
+    <div class="movie-info">
+      <h4 class="movie-title">
+        <a href="OnePiece.html">One Piece Arc Egghead</a>
+      </h4>
+    </div>
+  </div>
+  <div class="movie-card">
+    <a href="Quaquyt.html">
+      <img src="Images/1742924457-image-64731662951634776686806.png" alt="Khi cuộc đời cho bạn quả quýt">
+    </a>
+    <div class="movie-info">
+      <h4 class="movie-title">
+        <a href="Quaquyt.html">Khi cuộc đời cho bạn quả quýt</a>
+      </h4>
+    </div>
+  </div>
+  <div class="movie-card">
+    <a href="Diadao.html">
+      <img src="Images/Địa đạo Mặt trời trong bóng tối.jpg" alt="Địa đạo: Mặt trời trong bóng tối">
+    </a>
+    <div class="movie-info">
+      <h4 class="movie-title">
+        <a href="Diadao.html">Địa đạo: Mặt trời trong bóng tối</a>
+      </h4>
+    </div>
+  </div>
+  <div class="movie-card">
+    <a href="Latmat.html">
+      <img src="Images/Review phim Lật Mặt 6_ Tấm Vé Định Mệnh - Hành động hấp dẫn, cốt truyện lôi cuốn — Khen Phim.jpg" alt="Lật Mặt 6: Tấm Vé Định Mệnh">
+    </a>
+    <div class="movie-info">
+      <h4 class="movie-title">
+        <a href="Latmat.html">Lật Mặt 6: Tấm Vé Định Mệnh</a>
+      </h4>
+    </div>
+  </div>
+  <div class="movie-card">
+    <a href="Spyxfamily.html">
+      <img src="Images/poster code white.jpg" alt="Spy x family CODE:White">
+    </a>
+    <div class="movie-info">
+      <h4 class="movie-title">
+        <a href="Spyxfamily.html">Spy x family CODE:White</a>
+      </h4>
+    </div>
+  </div>
+</div>
+</body>
+</html>
