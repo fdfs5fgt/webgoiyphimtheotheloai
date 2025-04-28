@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng Ký</title>
+  <style>
+    body {
+      background-color: black;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .register-box {
+      width: 350px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .register-box h2 {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="register-box">
+    <h2>Đăng Ký</h2>
+    <form>
+      <input type="text" placeholder="Họ và tên" required>
+      <input type="text" placeholder="Tên đăng nhập" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Mật khẩu" required>
+      <input type="password" placeholder="Nhập lại mật khẩu" required>
+      <button type="submit">Đăng ký</button>
+    </form>
+  </div>
+
+</body>
+</html>

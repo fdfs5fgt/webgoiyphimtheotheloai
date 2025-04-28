@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Phim Tình Cảm</title>
+  <style>
+    body {
+      background-color: black;
+      font-family: Arial;
+      padding: 20px;
+      margin: 0;
+      color: white;
+    }
+    .genre-box {
+      background-color: #1c1c1c;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      margin-bottom: 30px;
+    }
+    .movie-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .movie-box {
+      width: 200px;
+      margin: 20px;
+      background-color: #222;
+      border: 1px solid #333;
+      border-radius: 8px;
+      text-align: left;
+      text-decoration: none;
+      color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+    .movie-box:hover {
+      transform: scale(1.05);
+    }
+    .movie-box img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    .movie-title {
+      padding: 10px;
+      font-weight: bold;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #bbb;
+      font-size: 16px;
+    }
+    .back-link a:hover {
+      color: #ff6600;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="genre-box">
+    <h1>Phim Thể Loại: Tình Cảm</h1>
+
+    <div class="movie-container">
+      <a href="OnePiece.html" class="movie-box">
+        <img src="Images/Egghead One Piece.jpg" alt="One Piece">
+        <p class="movie-title">One Piece</p>
+      </a>
+      <a href="Quaquyt.html" class="movie-box">
+        <img src="Images/1742924457-image-64731662951634776686806.png" alt="Khi cuộc đời cho bạn quả quýt">
+        <p class="movie-title">Khi cuộc đời cho bạn quả quýt</p>
+      </a>
+    </div>
+    <div class="back-link">
+      <p><a href="Chontheloai.html">← Quay lại trang thể loại</a></p>
+    </div>
+  </div>
+</body>
+</html>
